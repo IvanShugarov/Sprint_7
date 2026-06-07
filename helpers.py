@@ -1,7 +1,7 @@
 import requests
 import random
 import string
-from urls import *
+from urls import CREATE_COURIER
 
 def generate_random_string(length):
     letters = string.ascii_lowercase

@@ -11,5 +11,5 @@ class CourierApi:
         return response
 
     def delete_courier(self,courier_id):
-        response = requests.delete(CREATE_COURIER+"/"+str(courier_id))
+        response = requests.delete(f"{CREATE_COURIER}/{courier_id}")
         return response

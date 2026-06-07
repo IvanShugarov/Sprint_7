@@ -1,7 +1,9 @@
 import pytest
 from api.order_api import OrdersApi
+import allure
 
 class TestOrder:
+    @allure.title("Проверка успешного заказа самоката")
     @pytest.mark.parametrize("color",[["GREY"],["BLACK"],["GREY","BLACK"],[]])
     def test_order(self,color):
         payload = {
